@@ -184,7 +184,7 @@ masterpiece, best quality,</textarea>
         <!--label class="layui-form-label">正</label-->
         <div class="layui-input-block" style="margin-left: 0px">
           <textarea id="tagarea2" class="layui-textarea" style="min-height: 10px">
-lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet,</textarea>
+            EasyNegative, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, glans, text, error, jpeg artifacts, ugly, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, username, watermark, signature, (mole:1.4),</textarea>
         </div>
       </div>
 
@@ -3656,7 +3656,7 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
-                <span class="english">realistic humid skin</span><span class="chinese">逼真的潮湿皮肤 </span>
+                <span class="english">realistic humid skin</span><span class="chinese">逼真的柔润的皮肤</span>
               </div>
             </div>
           </form>
@@ -3737,6 +3737,33 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
                 <span class="english">bouncing breasts</span><span class="chinese">弹来弹去</span>
+              </div>
+            </div>
+          </form>
+          <p>腿</p>
+          <form class="layui-form">
+            <div class="tagbutton" id="butleg0">
+              <div class="minus" style="display: none">-</div>
+              <div class="plus" style="display: none">+</div>
+              <div class="buttext">
+                <span class="english">slender thighs</span><span class="chinese">修长的大腿</span>
+              </div>
+            </div>
+            <div class="tagbutton" id="butleg1">
+              <div class="minus" style="display: none">-</div>
+              <div class="plus" style="display: none">+</div>
+              <div class="buttext">
+                <span class="english">slender legs</span><span class="chinese">纤细的小腿</span>
+              </div>
+            </div>
+          </form>
+          <p>臀</p>
+          <form class="layui-form">
+            <div class="tagbutton" id="butbutt0">
+              <div class="minus" style="display: none">-</div>
+              <div class="plus" style="display: none">+</div>
+              <div class="buttext">
+                <span class="english">bubble butt</span><span class="chinese">蜜桃臀</span>
               </div>
             </div>
           </form>
@@ -7675,7 +7702,7 @@ lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer
       <label class="layui-form-label">排除次品</label>
       <div class="layui-input-block">
         <input type="text" name="title" required="" lay-verify="required"
-          value="nsfw, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, "
+          value="EasyNegative, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, glans, text, error, jpeg artifacts, ugly, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, username, watermark, signature, (mole:1.4)"
           autocomplete="off" class="layui-input" id="badbad" />
       </div>
     </div>
