@@ -87,9 +87,9 @@
 
       <div class="layui-input-block" style="display: inline-block; margin-left: 0">
         <label class="layui-form-label" style="font-weight: bold; width: auto">加权符号切换</label>
-        <input type="checkbox" lay-filter="switchicon" lay-skin="switch" lay-text="( )|{ }" />
-        <div class="layui-unselect layui-form-switch" lay-skin="_switch">
-          <em>{ }</em><i></i>
+        <input type="checkbox" lay-filter="switchicon" lay-skin="switch" lay-text="{ }|()" />
+        <div class="layui-unselect layui-form-switch " lay-skin="_switch">
+          <em>( )</em><i></i>
         </div>
       </div>
 
@@ -278,7 +278,7 @@ masterpiece, best quality,</textarea>
             </div>
           </form>
           <hr />
-          <p>常用 LoRa</p>
+          <p>常用 LoRa(可以手动修改小数点后面的值，总数加起来不要超过 1)</p>
           <form class="layui-form">
             <div class="tagbutton" id="butlora0">
               <div class="minus" style="display: none">-</div>
@@ -294,13 +294,28 @@ masterpiece, best quality,</textarea>
                 <span class="english lora">lora:japaneseDollLikeness_v10:0.2</span><span class="chinese">日偶</span>
               </div>
             </div>
-            <div class="tagbutton" id="butlora1">
+            <div class="tagbutton" id="butlora2">
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
                 <span class="english lora">lora:taiwanDollLikeness_v10:0.2</span><span class="chinese">台偶</span>
               </div>
             </div>
+            <div class="tagbutton" id="butlora3">
+              <div class="minus" style="display: none">-</div>
+              <div class="plus" style="display: none">+</div>
+              <div class="buttext">
+                <span class="english lora">lora:shojovibe_v11:0.2</span><span class="chinese">少女感</span>
+              </div>
+            </div>
+            <div class="tagbutton" id="butlora4">
+              <div class="minus" style="display: none">-</div>
+              <div class="plus" style="display: none">+</div>
+              <div class="buttext">
+                <span class="english lora">lora:chineseQingchunGirl:0.4</span><span class="chinese">中国式清纯范儿</span>
+              </div>
+            </div>
+
           </form>
           <hr />
           <p>其他Tag</p>
@@ -3770,6 +3785,22 @@ masterpiece, best quality,</textarea>
           <hr />
           <p>R18</p>
           <form class="layui-form r18">
+            <div class="tagbutton" id="but0tagset701">
+              <div class="minus" style="display: none">-</div>
+              <div class="plus" style="display: none">+</div>
+              <div class="buttext">
+                <span class="english lora">lora:realisticVaginasAsian_asianpussy1V1:0.2</span><span class="chinese">亚裔阴唇
+                </span>
+              </div>
+            </div>
+            <div class="tagbutton" id="but0tagset702">
+              <div class="minus" style="display: none">-</div>
+              <div class="plus" style="display: none">+</div>
+              <div class="buttext">
+                <span class="english lora">lora:LORARealRefinedPussy_pussy10:0.2</span><span class="chinese">阴唇美化
+                </span>
+              </div>
+            </div>
             <div class="tagbutton" id="butbreast180">
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
@@ -7720,8 +7751,8 @@ masterpiece, best quality,</textarea>
     var flagchinese = "inline-block";
     var flagplus = "none";
     var flagdel = "none";
-    var flagweightl = "{";
-    var flagweightr = "}";
+    var flagweightl = "(";
+    var flagweightr = ")";
 
     function toast(msg, type, time) {
       var oDiv = document.createElement("div");
@@ -7811,16 +7842,6 @@ masterpiece, best quality,</textarea>
           console.log("yes");
           $(".english").each(function () {
             console.log($(this).html());
-            var reg1 = new RegExp("\\{", "g");
-            var reg2 = new RegExp("\\}", "g");
-            $(this).html($(this).html().replace(reg1, "("));
-            $(this).html($(this).html().replace(reg2, ")"));
-          });
-          flagweightl = "(";
-          flagweightr = ")";
-        } else {
-          $(".english").each(function () {
-            console.log($(this).html());
             var reg1 = new RegExp("\\(", "g");
             var reg2 = new RegExp("\\)", "g");
             $(this).html($(this).html().replace(reg1, "{"));
@@ -7828,6 +7849,16 @@ masterpiece, best quality,</textarea>
           });
           flagweightl = "{";
           flagweightr = "}";
+        } else {
+          $(".english").each(function () {
+            console.log($(this).html());
+            var reg1 = new RegExp("\\{", "g");
+            var reg2 = new RegExp("\\}", "g");
+            $(this).html($(this).html().replace(reg1, "("));
+            $(this).html($(this).html().replace(reg2, ")"));
+          });
+          flagweightl = "(";
+          flagweightr = ")";
         }
         generate();
       });
