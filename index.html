@@ -7795,6 +7795,8 @@ masterpiece, best quality,</textarea>
       }, time);
     }
 
+    var defaultNegative = "EasyNegative, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, glans, text, error, jpeg artifacts, ugly, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, username, watermark, signature, (mole:1.4),nsfw,cleavage,bra out,breasts, breasts out,nipple,nipples out,panties out,";
+
     layui.use("form", function () {
       var form = layui.form;
 
@@ -7803,13 +7805,11 @@ masterpiece, best quality,</textarea>
           console.log(this.checked);
           $(".r18").css("display", "block");
           $(".nr18").css("display", "none");
-          document.getElementById("badbad").value =
-            "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, ";
+          document.getElementById("badbad").value = defaultNegative;
         } else {
           $(".r18").css("display", "none");
           $(".nr18").css("display", "block");
-          document.getElementById("badbad").value =
-            "nsfw, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet, ";
+          document.getElementById("badbad").value = defaultNegative;
         }
       });
 
@@ -8087,14 +8087,14 @@ $("#xxxx").addClass("class","className");
     }
     function backtag2() {
       document.getElementById("tagarea2").value =
-        "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet,";
+        defaultNegative;
     }
     function cleartag2() {
       document.getElementById("tagarea2").value = "";
     }
     function recover2() {
       document.getElementById("tagarea2").value =
-        "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, bad feet,";
+        defaultNegative;
     }
 
     var verno = "5";
