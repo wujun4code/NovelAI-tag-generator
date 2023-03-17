@@ -117,7 +117,7 @@
             style="display: inline-block">大师作品</span>
         </div>
         <div id="del" class="del" style="display: none">
-          <i class="layui-icon"></i>
+          <i class="layui-icon">×</i>
         </div>
       </div>
       <div class="draggable-element" id="tagbestb">
@@ -128,7 +128,7 @@
             style="display: inline-block">最好画质</span>
         </div>
         <div id="del" class="del" style="display: none">
-          <i class="layui-icon"></i>
+          <i class="layui-icon">×</i>
         </div>
       </div>
 
@@ -183,8 +183,7 @@ masterpiece, best quality,</textarea>
           ">
         <!--label class="layui-form-label">正</label-->
         <div class="layui-input-block" style="margin-left: 0px">
-          <textarea id="tagarea2" class="layui-textarea" style="min-height: 10px">
-            EasyNegative, sketches, (worst quality:2), (low quality:2), (normal quality:2), lowres, ((monochrome)), ((grayscale)), skin spots, acnes, skin blemishes, age spot, glans, text, error, jpeg artifacts, ugly, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, username, watermark, signature, (mole:1.4),</textarea>
+          <textarea id="tagarea2" class="layui-textarea" style="min-height: 100px"></textarea>
         </div>
       </div>
 
@@ -7994,7 +7993,7 @@ masterpiece, best quality,</textarea>
           $(this).children(".chinese").html() +
           "</span></div><div class='del' style='display:" +
           flagdel +
-          "'><i class='layui-icon'>&#xe640;</i></div></div>";
+          "'><i class='layui-icon'>×</i></div></div>";
         $("#addtag").before(newtag);
 
         $(function () {
