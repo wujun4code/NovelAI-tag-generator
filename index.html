@@ -249,8 +249,8 @@ masterpiece, best quality,</textarea>
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
-                <span class="english">masterpiece,best quality,official art,extremely detailed CG
-                  unity 8k wallpaper</span><span class="chinese">更高质量</span>
+                <span class="english">official art,extremely detailed CG unity 8k wallpaper</span><span
+                  class="chinese">更高质量</span>
               </div>
             </div>
             <div class="tagbutton" id="butextreme">
@@ -271,50 +271,87 @@ masterpiece, best quality,</textarea>
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
-                <span class="english">ultra high res,depth of field,illustration,amazing,finely detail,huge
-                  filesize,ultra-detailed,highres,extremely detailed</span><span class="chinese">高清保真</span>
+                <span class="english">depth of field,illustration,amazing,finely detail</span><span
+                  class="chinese">高质量</span>
+              </div>
+            </div>
+            <div class="tagbutton" id="buthigh">
+              <div class="minus" style="display: none">-</div>
+              <div class="plus" style="display: none">+</div>
+              <div class="buttext">
+                <span class="english">huge filesize,ultra high res,ultra-detailed,highres,extremely detailed</span><span
+                  class="chinese">高清</span>
               </div>
             </div>
           </form>
           <hr />
           <p>常用 LoRa(可以手动修改小数点后面的值，总数加起来不要超过 1)</p>
           <form class="layui-form">
-            <div class="tagbutton" id="butlora0">
-              <div class="minus" style="display: none">-</div>
-              <div class="plus" style="display: none">+</div>
-              <div class="buttext">
-                <span class="english lora">lora:koreanDollLikeness_v15:0.2</span><span class="chinese">韩偶</span>
+            <div>
+              <div class="tagbutton" id="butlora0">
+                <div class="minus" style="display: none">-</div>
+                <div class="plus" style="display: none">+</div>
+                <div class="buttext">
+                  <span class="english lora">lora:koreanDollLikeness_v15:0.2</span><span class="chinese">韩偶</span>
+                </div>
               </div>
+              <a href="https://huggingface.co/amornlnw7/koreanDollLikeness_v15"
+                target="_blank">koreanDollLikeness_v15@Huggingface</a>
             </div>
-            <div class="tagbutton" id="butlora1">
-              <div class="minus" style="display: none">-</div>
-              <div class="plus" style="display: none">+</div>
-              <div class="buttext">
-                <span class="english lora">lora:japaneseDollLikeness_v10:0.2</span><span class="chinese">日偶</span>
+            <div>
+              <div class="tagbutton" id="butlora1">
+                <div class="minus" style="display: none">-</div>
+                <div class="plus" style="display: none">+</div>
+                <div class="buttext">
+                  <span class="english lora">lora:japaneseDollLikeness_v10:0.2</span><span class="chinese">日偶</span>
+                </div>
               </div>
+              <a href="https://huggingface.co/aimainia/japaneseDollLikeness_v10"
+                target="_blank">japaneseDollLikeness_v10@Huggingface</a>
             </div>
-            <div class="tagbutton" id="butlora2">
-              <div class="minus" style="display: none">-</div>
-              <div class="plus" style="display: none">+</div>
-              <div class="buttext">
-                <span class="english lora">lora:taiwanDollLikeness_v10:0.2</span><span class="chinese">台偶</span>
+            <div>
+              <div class="tagbutton" id="butlora2">
+                <div class="minus" style="display: none">-</div>
+                <div class="plus" style="display: none">+</div>
+                <div class="buttext">
+                  <span class="english lora">lora:taiwanDollLikeness_v10:0.2</span><span class="chinese">台偶</span>
+                </div>
               </div>
-            </div>
-            <div class="tagbutton" id="butlora3">
-              <div class="minus" style="display: none">-</div>
-              <div class="plus" style="display: none">+</div>
-              <div class="buttext">
-                <span class="english lora">lora:shojovibe_v11:0.2</span><span class="chinese">少女感</span>
-              </div>
-            </div>
-            <div class="tagbutton" id="butlora4">
-              <div class="minus" style="display: none">-</div>
-              <div class="plus" style="display: none">+</div>
-              <div class="buttext">
-                <span class="english lora">lora:chineseQingchunGirl:0.4</span><span class="chinese">中国式清纯范儿</span>
-              </div>
+              <a href="https://huggingface.co/opsopus/taiwanDollLikeness"
+                target="_blank">taiwanDollLikeness@Huggingface</a>
             </div>
 
+            <div>
+              <div class="tagbutton" id="butlora3">
+                <div class="minus" style="display: none">-</div>
+                <div class="plus" style="display: none">+</div>
+                <div class="buttext">
+                  <span class="english lora">lora:shojovibe_v11:0.2</span><span class="chinese">少女感</span>
+                </div>
+              </div>
+              <a href="https://civitai.com/models/13213/shojovibe" target="_blank">shojovibe@Civiai</a>
+            </div>
+            <div>
+              <div class="tagbutton" id="butlora4">
+                <div class="minus" style="display: none">-</div>
+                <div class="plus" style="display: none">+</div>
+                <div class="buttext">
+                  <span class="english lora">lora:chineseQingchunGirl:0.4</span><span class="chinese">中国式清纯范儿</span>
+                </div>
+              </div>
+              <a href="https://civitai.com/models/17552/chinese-qingchun-girl"
+                target="_blank">chinese-qingchun-girl@Civiai</a>
+            </div>
+            <div>
+              <div class="tagbutton" id="butlora5">
+                <div class="minus" style="display: none">-</div>
+                <div class="plus" style="display: none">+</div>
+                <div class="buttext">
+                  <span class="english lora">lora:cuteGirlMix4_v10:0.4</span><span class="chinese">可爱风</span>
+                </div>
+              </div>
+              <a href="https://civitai.com/models/14171/cutegirlmix4" target="_blank">cutegirlmix4@Civiai</a>
+            </div>
           </form>
           <hr />
           <p>其他Tag</p>
@@ -323,75 +360,90 @@ masterpiece, best quality,</textarea>
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
-                <span class="english">wedding dress:china dress:0.3</span><span class="chinese">旗袍婚纱 </span>
+                <span class="english">wedding dress:china dress:0.3</span><span class="chinese">旗袍婚纱</span>
               </div>
             </div>
             <div class="tagbutton" id="but0tagset1">
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
-                <span class="english">arms behind head</span><span class="chinese">双手脑后 </span>
+                <span class="english">arms behind head</span><span class="chinese">双手脑后</span>
               </div>
             </div>
             <div class="tagbutton" id="but0tagset2">
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
-                <span class="english">arms up, armpits</span><span class="chinese">举手露腋 </span>
+                <span class="english">arms up, armpits</span><span class="chinese">举手露腋</span>
               </div>
             </div>
             <div class="tagbutton" id="but0tagset3">
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
-                <span class="english">tiamat (fate)</span><span class="chinese">提亚马特 </span>
-              </div>
-            </div>
-            <div class="tagbutton" id="but0tagset4">
-              <div class="minus" style="display: none">-</div>
-              <div class="plus" style="display: none">+</div>
-              <div class="buttext">
-                <span class="english"></span><span class="chinese"></span>
+                <span class="english">tiamat (fate)</span><span class="chinese">提亚马特</span>
               </div>
             </div>
           </form>
           <hr />
           <p>R18Tag</p>
           <form class="layui-form r18">
+            <div>
+              <div class="tagbutton" id="but0tagloraR180">
+                <div class="minus" style="display: none">-</div>
+                <div class="plus" style="display: none">+</div>
+                <div class="buttext">
+                  <span class="english lora">lora:LORARealRefinedPussy_pussy10:0.2</span><span
+                    class="chinese">逼真阴唇</span>
+                </div>
+                <a href="https://civitai.com/models/9581/lorareal-refined-pussy" target="_blank">lorareal-refined-pussy@Civiai</a>
+              </div>
+            </div>
+            <div>
+              <div class="tagbutton" id="but0tagloraR181">
+                <div class="minus" style="display: none">-</div>
+                <div class="plus" style="display: none">+</div>
+                <div class="buttext">
+                  <span class="english lora">lora:realisticVaginasAsian_asianpussy1V1:0.2</span><span
+                    class="chinese">亚裔阴唇</span>
+                </div>
+                <a href="https://civitai.com/models/15376/realistic-vaginas-asian-pussy-1" target="_blank">realistic-vaginas-asian-pussy-1@Civiai</a>
+              </div>
+            </div>
             <div class="tagbutton" id="but0tagset180">
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
                 <span class="english">surrounded, multiple others, exhibitionism, audience,
-                  background characters, crowd, public humiliation</span><span class="chinese">露出 </span>
+                  background characters, crowd, public humiliation</span><span class="chinese">露出</span>
               </div>
             </div>
             <div class="tagbutton" id="but0tagset181">
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
-                <span class="english">partially unbuttoned</span><span class="chinese">解开一部分扣子 </span>
+                <span class="english">partially unbuttoned</span><span class="chinese">解开一部分扣子</span>
               </div>
             </div>
             <div class="tagbutton" id="but0tagset182">
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
-                <span class="english">show foot</span><span class="chinese">展示足 </span>
+                <span class="english">show foot</span><span class="chinese">展示足</span>
               </div>
             </div>
             <div class="tagbutton" id="but0tagset183">
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
-                <span class="english">pubic tattoo on underbelly</span><span class="chinese">淫纹在小腹 </span>
+                <span class="english">pubic tattoo on underbelly</span><span class="chinese">淫纹在小腹</span>
               </div>
             </div>
             <div class="tagbutton" id="but0tagset184">
               <div class="minus" style="display: none">-</div>
               <div class="plus" style="display: none">+</div>
               <div class="buttext">
-                <span class="english">spread pussy</span><span class="chinese">掰开XX </span>
+                <span class="english">spread pussy</span><span class="chinese">掰开XX</span>
               </div>
             </div>
             <div class="tagbutton" id="but0tagset185">
